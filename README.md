@@ -1,4 +1,4 @@
 # Digital-Logic
 
 ##### Single cycle processor project
-##### A demo written in mips
+##### A piano game demo written in MIPS Assembly Language
