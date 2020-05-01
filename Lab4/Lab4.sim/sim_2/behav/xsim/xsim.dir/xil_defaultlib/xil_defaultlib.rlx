@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sources_1/new/xycounter.sv,1580162770,systemVerilog,,C:/Users/marti/Downloads/displaydriver_10x4_test.sv,,xycounter,,,../../../../Lab4.srcs/sources_1/new,,,,,
+C:/Labs-in-Vivado/COMP541/Lab4/Lab4.sim/sim_2/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,1580835538,verilog,,,,,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/vgadisplaydriver.sv,1580839989,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv,C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,vgadisplaydriver,,,../../../../Lab4.srcs/sources_1/new,,,,,
+C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv,1580839533,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sources_1/new/xycounter.sv,C:/Labs-in-Vivado/COMP541/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,vgatimer,,,../../../../Lab4.srcs/sources_1/new,,,,,
+C:/Users/marti/Downloads/displaydriver_10x4_test.sv,1580840098,systemVerilog,,,,displaydriver_10x4_test;selfcheck,,,../../../../Lab4.srcs/sources_1/new,,,,,

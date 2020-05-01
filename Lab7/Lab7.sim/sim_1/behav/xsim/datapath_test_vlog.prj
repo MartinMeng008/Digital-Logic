@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../Lab7.srcs/sources_1/imports/Downloads" \
+"../../../../Lab7.srcs/sources_1/imports/new/ALU.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/adder.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/addsub.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/comparator.sv" \
+"../../../../Lab7.srcs/sources_1/new/datapath.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/fulladder.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/logical.sv" \
+"../../../../Lab7.srcs/sources_1/imports/Downloads/register_file.sv" \
+"../../../../Lab7.srcs/sources_1/imports/new/shifter.sv" \
+"../../../../Lab7.srcs/sources_1/imports/Downloads/datapath_test.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab2B.srcs/sources_1/new/ALU.sv" \
+"../../../../../Lab2a/Lab2a.srcs/sources_1/new/adder.sv" \
+"../../../../../Lab2a/Lab2a.srcs/sources_1/new/addsub.sv" \
+"../../../../Lab2B.srcs/sources_1/new/comparator.sv" \
+"../../../../../Lab1/Lab1.srcs/sources_1/new/fulladder.sv" \
+"../../../../Lab2B.srcs/sources_1/new/logical.sv" \
+"../../../../Lab2B.srcs/sources_1/new/shifter.sv" \
+"../../../../Lab2B.srcs/sim_4/new/Lab2b_Part4_test_32bit.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

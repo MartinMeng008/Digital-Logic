@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab6.srcs/sources_1/imports/new/display8digit.sv" \
+"../../../../Lab6.srcs/sources_1/imports/new/hexto7seg.sv" \
+"../../../../Lab6.srcs/sources_1/imports/Downloads/seebounce.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,129 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Apr 24 02:37:00 2020
+| Host         : DESKTOP-RBSJL6K running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    51 |
+|    Minimum number of control sets                        |    51 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   133 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    51 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |    10 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              59 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             138 |           44 |
+| Yes          | No                    | No                     |             171 |           61 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             139 |           45 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|     Clock Signal    |                           Enable Signal                          |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++---------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  clkdv/clk100       | display/V/xy/Every4thTick                                        |                                                     |                1 |              1 |
+|  clkdv/clk100       | display/V/xy/x[9]_i_1_n_0                                        |                                                     |                1 |              1 |
+|  clkdv/clk12        |                                                                  |                                                     |                2 |              2 |
+|  clkdv/clkout0_BUFG |                                                                  |                                                     |                1 |              3 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/CE_Cnt_Num_Reads                        | accel/accel/ADXL_Control/Reset_Cnt_Num_Reads        |                1 |              4 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/Cmd_Reg[0]_6                            | accel/accel/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0      |                1 |              4 |
+|  clkdv/clk100       | keyb/count[3]_i_1_n_0                                            | keyb/count0                                         |                1 |              4 |
+|  clkdv/clk12        | mips/dp/pc[31]_i_1_n_0                                           | reset_IBUF                                          |                3 |              4 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | accel/accel/RESET_INT_reg_n_0                       |                2 |              4 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                   | accel/accel/ADXL_Control/Cmd_Reg[1]0_in[7]          |                2 |              5 |
+|  clkdv/clk100       | keyb/keyb_char[13]_i_1_n_0                                       | keyb/keyb_char[29]_i_1_n_0                          |                2 |              5 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_4                              |                                                     |                1 |              6 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/Cmd_Reg[2]_7                            | accel/accel/ADXL_Control/Cmd_Reg[2]_5[7]            |                3 |              6 |
+|  clkdv/clk100       |                                                                  | accel/accel/RESET_INT_reg_n_0                       |                2 |              6 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_4_0                            |                                                     |                1 |              6 |
+|  clkdv/clk100       |                                                                  | accel/accel/ADXL_Control/SPI_Interface/SCLK_2X_DIV0 |                2 |              6 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/Shift_Cmd_Reg                           | accel/accel/RESET_INT_reg_n_0                       |                3 |              7 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                     |                2 |              8 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                     |                2 |              8 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                     |                2 |              8 |
+|  clkdv/clk100       |                                                                  | accel/accel/Accel_Calculation/ACCEL_Y_CLIP[1]       |                3 |              9 |
+|  clkdv/clk100       |                                                                  | accel/accel/Accel_Calculation/ACCEL_X_CLIP[3]       |                2 |              9 |
+|  clkdv/clk100       | keyb/keyb_char[13]_i_1_n_0                                       |                                                     |                3 |              9 |
+|  clkdv/clk100       | display/V/xy/x[9]_i_1_n_0                                        | display/V/xy/y[9]_i_1_n_0                           |                3 |              9 |
+|  clkdv/clk100       | display/V/xy/Every4thTick                                        | display/V/xy/x[9]_i_1_n_0                           |                4 |              9 |
+|  clkdv/clk100       |                                                                  | accel/accel/ADXL_Control/Cnt_SS_Inactive0           |                3 |             10 |
+|  clkdv/clk100       | keyb/bits[9]_i_1_n_0                                             |                                                     |                3 |             10 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_12_0                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_15_2                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_13_1                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_15_0                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_512_639_0_0_i_2_0                          |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_15_1                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_15_3                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_13_0                           |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_1024_1151_0_0_i_2_0                        |                                                     |                3 |             12 |
+|  clkdv/clk100       | keyb/count0                                                      |                                                     |                3 |             12 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_9_0[0]                         |                                                     |                9 |             16 |
+|  clkdv/clk100       |                                                                  | keyb/clear                                          |                5 |             20 |
+|  clkdv/clk100       |                                                                  | accel/accel/ADXL_Control/Reset_Sample_Rate_Div      |                5 |             20 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/E[0]                                    | accel/accel/RESET_INT_reg_n_0                       |                5 |             22 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/StC_Adxl_Ctrl[3]                        | accel/accel/RESET_INT_reg_n_0                       |                7 |             24 |
+|  clkdv/clk12        |                                                                  | reset_IBUF                                          |               14 |             26 |
+|  clkdv/clk100       |                                                                  | sound/clear                                         |                8 |             32 |
+|  clkdv/clk12        | mips/dp/ALU/L/mem_reg_0_127_0_0_i_8_0[0]                         |                                                     |               13 |             32 |
+|  clkdv/clk12        | mips/dp/ALU/L/E[0]                                               |                                                     |               13 |             32 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/CE_Cnt_Num_Reads                        | accel/accel/ADXL_Control/ACCEL_X_SUM0               |                8 |             32 |
+|  clkdv/clk100       | accel/accel/ADXL_Control/SPI_Interface/Shift_Data_Reg            |                                                     |                9 |             42 |
+|  clkdv/clk100       |                                                                  |                                                     |               19 |             54 |
+|  clkdv/clk12        | mips/dp/ALU/L/dmem_wr                                            |                                                     |               16 |             64 |
+|  clkdv/clk12        | mips/dp/controls[0]                                              |                                                     |               12 |             96 |
++---------------------+------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

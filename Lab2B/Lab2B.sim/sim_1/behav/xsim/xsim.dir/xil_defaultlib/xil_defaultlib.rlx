@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Labs-in-Vivado/COMP541/Lab1/Lab1.srcs/sources_1/new/fulladder.sv,1579286445,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab2a/Lab2a.srcs/sim_5/new/addsub_tester.sv,,fulladder,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab2B/Lab2B.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab2a/Lab2a.srcs/sim_5/new/addsub_tester.sv,1579364681,systemVerilog,,,,addsub_tester,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab2a/Lab2a.srcs/sources_1/new/adder.sv,1579316683,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab2a/Lab2a.srcs/sources_1/new/addsub.sv,,adder,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab2a/Lab2a.srcs/sources_1/new/addsub.sv,1579316984,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab1/Lab1.srcs/sources_1/new/fulladder.sv,,addsub,,,,,,,,

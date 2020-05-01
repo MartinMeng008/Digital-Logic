@@ -1,0 +1,104 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Feb 15 02:04:44 2020
+| Host         : DESKTOP-RBSJL6K running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file io_demo_control_sets_placed.rpt
+| Design       : io_demo
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    79 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           18 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             102 |           28 |
+| Yes          | No                    | No                     |              73 |           18 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              78 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                 Enable Signal                                |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | keyb/bits                                                                    | keyb/count0                                         |                1 |              4 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/Cmd_Reg[0]_1                                        | accel/accel/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0      |                1 |              4 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/Cnt_Num_Reads[3]_i_2_n_0                            | accel/accel/ADXL_Control/Reset_Cnt_Num_Reads        |                1 |              4 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0             | accel/accel/RESET_INT_reg_n_0                       |                2 |              4 |
+|  clk_IBUF_BUFG | keyb/keyb_char[15]_i_1_n_0                                                   | keyb/keyb_char[29]_i_1_n_0                          |                1 |              5 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                               | accel/accel/ADXL_Control/Cmd_Reg[1]0_in[7]          |                1 |              5 |
+|  clk_IBUF_BUFG |                                                                              | accel/accel/RESET_INT_reg_n_0                       |                3 |              6 |
+|  clk_IBUF_BUFG |                                                                              | accel/accel/ADXL_Control/SPI_Interface/SCLK_2X_DIV0 |                2 |              6 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/Cmd_Reg[2]_0                                        | accel/accel/ADXL_Control/Cmd_Reg[2][7]              |                1 |              6 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/D_Send[6]_i_1_n_0                                   | accel/accel/RESET_INT_reg_n_0                       |                2 |              7 |
+|  clk_IBUF_BUFG |                                                                              | accel/accel/Accel_Calculation/ACCEL_Y_CLIP[4]       |                3 |              8 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0                   |                                                     |                2 |              8 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/SPI_Interface/SHIFT_TICK_IN                         |                                                     |                1 |              8 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/SPI_Interface/EN_LOAD_DOUT                          |                                                     |                1 |              8 |
+|  clk_IBUF_BUFG | keyb/keyb_char[15]_i_1_n_0                                                   |                                                     |                3 |              9 |
+|  clk_IBUF_BUFG |                                                                              | accel/accel/ADXL_Control/Cnt_SS_Inactive0           |                3 |             10 |
+|  clk_IBUF_BUFG | keyb/bits[9]_i_1_n_0                                                         |                                                     |                2 |             10 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/E[0]                                                | accel/accel/RESET_INT_reg_n_0                       |                2 |             11 |
+|  clk_IBUF_BUFG | keyb/count0                                                                  |                                                     |                3 |             12 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/StC_Adxl_Ctrl[3]                                    | accel/accel/RESET_INT_reg_n_0                       |                5 |             12 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/Cnt_Num_Reads[3]_i_2_n_0                            | accel/accel/ADXL_Control/ACCEL_X_SUM0               |                4 |             16 |
+|  clk_IBUF_BUFG |                                                                              | keyb/clear                                          |                5 |             20 |
+|  clk_IBUF_BUFG |                                                                              | accel/accel/ADXL_Control/Reset_Sample_Rate_Div      |                4 |             20 |
+|  clk_IBUF_BUFG | accel/accel/ADXL_Control/SPI_Interface/FSM_sequential_StC_Spi_SendRec_reg[1] |                                                     |                6 |             26 |
+|  clk_IBUF_BUFG |                                                                              | sound/count0_carry__2_n_0                           |                8 |             32 |
+|  clk_IBUF_BUFG |                                                                              |                                                     |               18 |             52 |
++----------------+------------------------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

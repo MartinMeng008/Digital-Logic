@@ -1,0 +1,30 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto fa5730296b3c4a1f906dcb6f1e11d815 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tester_full_behav xil_defaultlib.mips_tester_full xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 6 for port 'addr' [C:/Labs-in-Vivado/COMP541/Lab8/Lab8.srcs/sources_1/imports/Downloads/top.sv:38]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 6 for port 'addr' [C:/Labs-in-Vivado/COMP541/Lab8/Lab8.srcs/sources_1/imports/Downloads/top.sv:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.adder_default
+Compiling module xil_defaultlib.addsub
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.logical
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.datapath(Dbits=32)
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.rom_module(Nloc=64,Dbits=32,init...
+Compiling module xil_defaultlib.ram_module(Nloc=64,Dbits=32,init...
+Compiling module xil_defaultlib.top(imem_size=64,imem_init="full...
+Compiling module xil_defaultlib.selfcheck
+Compiling module xil_defaultlib.mips_tester_full
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tester_full_behav

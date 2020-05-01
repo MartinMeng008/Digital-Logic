@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Feb 22 05:20:30 2020
+# Process ID: 3024
+# Current directory: C:/Labs-in-Vivado/COMP541/Lab6/Lab6.runs/impl_1
+# Command line: vivado.exe -log stopwatch.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source stopwatch.tcl -notrace
+# Log file: C:/Labs-in-Vivado/COMP541/Lab6/Lab6.runs/impl_1/stopwatch.vdi
+# Journal file: C:/Labs-in-Vivado/COMP541/Lab6/Lab6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace

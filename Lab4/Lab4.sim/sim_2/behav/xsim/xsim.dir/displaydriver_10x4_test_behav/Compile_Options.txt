@@ -1,0 +1,1 @@
+-wto "171f93dd6ab745a6bbb8b6fbdc804392" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "displaydriver_10x4_test_behav" "xil_defaultlib.displaydriver_10x4_test" "xil_defaultlib.glbl" -log "elaborate.log" 

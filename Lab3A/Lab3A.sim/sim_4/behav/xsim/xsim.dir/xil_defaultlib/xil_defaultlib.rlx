@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.sim/sim_4/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sim_4/new/xycounter_test.sv,1580159153,systemVerilog,,,,xycounter_test,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sources_1/new/CounterMod4.sv,1580138519,systemVerilog,,,,CounterMod4,,,,,,,,
+C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sources_1/new/xycounter.sv,1580162770,systemVerilog,,C:/Labs-in-Vivado/COMP541/Lab3A/Lab3A.srcs/sim_4/new/xycounter_test.sv,,xycounter,,,,,,,,
